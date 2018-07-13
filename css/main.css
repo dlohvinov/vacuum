@@ -1,0 +1,427 @@
+body {
+    font-family: "Roboto Regular";
+}
+ul {
+    list-style: none;
+}
+.price {
+    position: absolute;
+    background: #9b3dac;
+    width: 120px; height: 120px;
+    border: #9b3dac solid 1px;
+    border-radius: 100%;
+    z-index: 20;
+    text-align: center;
+    vertical-align: bottom;
+    font-family: "Roboto Light", sans-serif;
+}
+.price p:first-child{
+    margin: 15px 0 5px 0;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.price p:nth-child(2){
+    font-size: 26px;
+}
+.price .price-sale {
+    position: absolute; bottom: 45px; right: -40px;
+    background: #fff;
+    width: 70px; height: 70px;
+    line-height: 65px;
+    border: #fff solid 1px;
+    border-radius: 100%;
+    z-index: 21;
+    text-align: center;
+    color: #9b3dac;
+    font-size: 24px;
+}
+
+
+nav {
+    position: fixed; top: 0; right: 0; left: 0;
+    padding-top: 35px;
+    z-index: 30;
+}
+/*nav:before {*/
+    /*content: "";*/
+    /*!*background: url("../img/nav_background.png");*!*/
+    /*position: absolute; top: 0; right: 0; left: 0; bottom: 0;*/
+/*}*/
+nav a {
+    font: 14px "Roboto Slab Regular";
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover {
+    color: #9b3dac;
+    text-decoration: none;
+    transition: 0.2s;
+}
+nav .menu > li {
+    display: inline-block;
+    margin: 10px 15px 0 15px;
+}
+nav .tel {
+    float: right;
+    text-align: right;
+    width: 200px;
+}
+nav .tel a:first-child {
+    font: 20px "Roboto Slab";
+    font-weight: bold;
+}
+nav .tel a:last-child {
+    font: 12px "Roboto Light";
+    text-decoration: underline;
+}
+nav .tel a:last-child:hover {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+header {
+    background: url("../img/bg1.png") center center;
+    background-size: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+header .col-lg-12 {
+    height: 100vh;
+}
+header .wrap {
+    position: absolute; bottom: 90px; left: 0;
+    font-family: "RobotoSlab", sans-serif;
+}
+header .wrap h2 {
+    font-size: 48px;
+    color: #9b3dac;
+    -webkit-text-stroke: 2px #43334d;
+    margin: 0;
+    font-weight: bold;
+}
+header .wrap h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 15px 0 25px 0;
+    font-weight: bold;
+}
+header .wrap p {
+    font: 20px "Roboto Slab Light";
+    margin: 0;
+    width: 80%;
+}
+header .wrap ul {
+    margin-top: 40px;
+    padding-left: 0;
+}
+header .wrap ul li {
+    font-size: 18px;
+    position: relative;
+    padding-left: 25px;
+}
+header .wrap ul li:last-child {
+    font-size: 12px;
+}
+header .wrap ul li:first-child:before {
+    content: url("../img/header_flower.png");
+    color: #9b3dac;
+    position: absolute; top: 2px; left: 0;
+}
+header .wrap ul li:nth-child(2):before {
+    content: url("../img/header_lamp.png");
+    color: #9b3dac;
+    position: absolute; top: 2px; left: 2px;
+}
+header .wrap ul li:nth-child(3):before {
+    content: url("../img/header_delivery.png");
+    color: #9b3dac;
+    position: absolute; top: 2px; left: 0;
+}
+header .col-lg-12:before {
+    content: '';
+    background: url("../img/bottle.png") no-repeat;
+    background-size: 90%;
+    width: 657px; height: 550px;
+    position: absolute; bottom: 0; right: -100px;
+    z-index: 10;
+}
+strong {
+    font-family: RobotoSlabBold, sans-serif;
+}
+header .price {
+    bottom: 20px; right: 140px;
+}
+
+
+.specification {
+    background-color: #eee;
+}
+.specification .specification-bottle-wrap {
+    display: block;
+    margin: 140px auto;
+    width: 420px; height: 420px;
+    background-color: #e98a2e;
+    background-size: 420px;
+    border-radius: 100%;
+    position: relative;
+}
+.specification-bottle-wrap h2 {
+    position: absolute; top: 0; left: -200px;
+    width: 300px;
+    text-align: right;
+    font: 30px "Roboto Slab Regular";
+    z-index: 10;
+}
+.specification-bottle-wrap h2:before {
+    content: '';
+    position: absolute; top: 0; right: 0;
+    transform: translate(35%, -25%);
+    width: 270px; height: 270px;
+    background: #fff;
+    border-radius: 100%;
+    z-index: -1;
+}
+.specification-bottle-wrap h2 strong {
+    text-transform: uppercase;
+}
+.specification-bottle-wrap img {
+    position: absolute;
+    top: -50px; right: 70px;
+    width: 70%;
+}
+
+.specification .specification-item .txt{
+    position: relative;
+    display: inline-block;
+    font: 16px "Roboto Slab Regular";
+    color: #fff;
+    padding: 15px 30px;
+    background: #9c3fad;
+    border-radius: 5px;
+    height: 70px;
+}
+.specification .specification-item:nth-child(1) {
+    text-align: right;
+    position: absolute; right: calc(50% + 340px); top: 335px;
+}
+.specification .specification-item:nth-child(2) {
+    text-align: right;
+    position: absolute; right: calc(50% + 300px); top: 500px;
+}
+.specification .specification-item:nth-child(3) {
+    position: absolute; left: calc(50% + 290px); top: 150px;
+}
+.specification .specification-item:nth-child(4) {
+    position: absolute; left: calc(50% + 340px); top: 335px;
+}
+.specification .specification-item:nth-child(5) {
+    position: absolute; left: calc(50% + 290px); top: 500px;
+}
+.specification .specification-item .icon {
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    transform: translate(-80%, -15%);
+    width: 100px; height: 100px;
+    background: #9c3fad;
+    border: 4px solid #e98a2e;
+    border-radius: 100%;
+}
+.specification .specification-item:nth-child(1) .icon, .specification .specification-item:nth-child(2) .icon {
+    right: 0;
+    transform: translate(80%, -15%);
+}
+.specification-item:hover .icon {
+    border-color: #fff;
+    transition: .5s;
+}
+.specification-item:hover .txt{
+    background-color: #fff;
+    color: #000;
+    transition: .4s;
+    margin-left: 8px;
+}
+.specification-item:nth-child(1):hover .txt, .specification-item:nth-child(2):hover .txt {
+    margin-right: 8px;
+}
+
+.special-offer {
+    font-family: "Roboto Slab Regular", sans-serif;
+    text-align: center;
+    color: #fff;
+    background: url("../img/special-offer-bg.png") no-repeat center center;
+    background-size: cover;
+    padding: 80px 0 70px;
+}
+.special-offer h2 {
+    font-size: 36px;
+}
+.special-offer h2 strong {
+    color: #e98a2e;
+    -webkit-text-stroke: 1px #623c16;
+}
+.special-offer p {
+    font-size: 24px;
+    margin: 40px 0 30px;
+}
+.special-offer p strong {
+    text-transform: uppercase;
+}
+.special-offer .btn {
+    font: 18px "Roboto Regular";
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #9c3fad;
+    border: 3px solid #9c3fad;
+    border-radius: 100px;
+    padding: 15px 35px;
+}
+.special-offer .btn:hover {
+    background: #e98a2e;
+    border: 2px solid #623c16;
+}
+
+
+.how-to {
+    padding: 110px 0;
+}
+.how-to .video {
+    display: inline-block;
+    vertical-align: top;
+}
+.how-to .how-to-wrap {
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+}
+.how-to .how-to-wrap h2{
+    font: 36px "Roboto Slab";
+    margin: -10px 0 40px;
+}
+.how-to .how-to-wrap h2 strong{
+    font: 36px "Roboto Slab";
+    font-weight: bold;
+}
+.how-to .how-to-wrap ul {
+    font: 20px "Roboto Light";
+    font-style: italic;
+    padding: 0;
+}
+.how-to .how-to-wrap ul li {
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.how-to .how-to-wrap ul li:nth-child(1):before {
+    content: '';
+    background: url("../img/how-to-first.png") no-repeat;
+    width: 31px; height: 31px;
+    position: absolute; top: 0; left: 0;
+}
+.how-to .how-to-wrap ul li:nth-child(2):before {
+    content: '';
+    background: url("../img/how-to-second.png") no-repeat;
+    width: 31px; height: 31px;
+    position: absolute; top: 0; left: 0;
+}
+.how-to .how-to-wrap ul li:nth-child(3):before {
+    content: '';
+    background: url("../img/how-to-done.png") no-repeat;
+    width: 31px; height: 31px;
+    position: absolute; top: 0; left: 0;
+}
+
+
+.sale {
+    background: #eee;
+    padding: 110px 0 0;
+}
+.sale .sale-stopper-wrap .price {
+    top: -20px; right: 50px;
+    color: #fff;
+}
+.sale h2 {
+    font: 36px "Roboto Slab";
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.sale h2 strong {
+    text-transform: uppercase;
+}
+.sale .sale-description-wrap > p {
+    display: inline-block;
+    max-width: calc(50% - 20px);
+    font: 24px "Roboto Slab";
+    margin-left: 20px;
+}
+.sale .timer-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.sale .timer-wrap p {
+    font: 18px "Roboto Light";
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.sale .timer-wrap .timer div {
+    display: inline-block;
+    font: 36px "Roboto Slab";
+    margin-left: 5px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.sale .timer-wrap .timer div:after {
+    content: ':';
+    margin-left: 5px;
+    font-weight: bold;
+}
+.sale .timer-wrap .timer div:nth-child(1):before {
+    content: 'дней';
+    position: absolute; bottom: 0; left: 10%;
+    font-size: 11px;
+}
+.sale .timer-wrap .timer div:nth-child(2):before {
+    content: 'часов';
+    position: absolute; bottom: 0; left: 3%;
+    font-size: 11px;
+}
+.sale .timer-wrap .timer div:nth-child(3):before {
+    content: 'минут';
+    position: absolute; bottom: 0; left: 3%;
+    font-size: 11px;
+}
+.sale .timer-wrap .timer div:nth-child(4):after {
+    content: 'секунд';
+    position: absolute; bottom: 0; left: -10%;
+    font-size: 11px; font-weight: normal;
+}
+
+.sale .sale-description-wrap ul {
+    font: 18px "Roboto Light";
+    font-style: italic;
+    padding: 0;
+    margin: 25px 0 0 20px;
+}
+.sale .sale-description-wrap ul li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 45px;
+}
+.sale .sale-description-wrap ul li:nth-child(1):before {
+    content: '';
+    background: url("../img/sale-item1.png") no-repeat;
+    width: 31px; height: 31px;
+    position: absolute; top: 0; left: 0;
+}
+.sale .sale-description-wrap ul li:nth-child(2):before {
+    content: '';
+    background: url("../img/sale-item2.png") no-repeat;
+    width: 31px; height: 31px;
+    position: absolute; top: 0; left: 0;
+}
