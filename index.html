@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <title>vacuum</title>
 
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+                    <a href="" class="logo"></a>
                 </div>
-                <div class="col-lg-8">
-                    <ul class="menu">
-                        <li><a href="">Как это работает?</a></li>
-                        <li><a href="">Преимущества</a></li>
-                        <li><a href="">Сотрудничество</a></li>
-                        <li><a href="">Оформить заказ</a></li>
-                    </ul>
+                <div class="col-lg-8 col-sm-12">
+                    <div id="menu-toggle">
+                        <ul class="menu">
+                            <li><a href="">Как это работает?</a></li>
+                            <li><a href="">Преимущества</a></li>
+                            <li><a href="">Сотрудничество</a></li>
+                            <li><a href="">Оформить заказ</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="tel">
@@ -29,6 +33,7 @@
                         <a href="">Заказать обратный звонок</a>
                     </div>
                 </div>
+                <!--<button class="main_mnu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>-->
             </div>
         </div>
     </nav>
@@ -38,8 +43,8 @@
              <div class="row">
                  <div class="col-lg-12">
                      <div class="wrap">
-                         <h2>Вакуумная пробка</h2>
-                         <h1>Vacuum Stopper</h1>
+                         <h1>Вакуумная пробка <br>
+                         <strong>Vacuum Stopper</strong></h1>
                          <p>Сохраняет <strong>свежесть</strong> и продлевает <strong>жизнь</strong> вашего напитка</p>
                          <ul>
                              <li><strong>Свежесть</strong> напитка сохраняется до 7 дней</li>
@@ -62,9 +67,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="specification-bottle-wrap">
-                        <h2>Качественная вакуумная пробка <strong>vacuum stopper:</strong></h2>
                         <img src="img/spec_bottle.png" alt="">
                     </div>
+                    <h2>Качественная вакуумная пробка <strong>vacuum stopper:</strong></h2>
                     <div>
                         <div class="specification-item">
                             <div class="icon"><img src="img/specification-item-gem.png" alt=""></div>
@@ -101,7 +106,7 @@
                         При покупке <strong>пяти</strong> пробок Vacuum Stopper <br> Вы получаете <strong>шестую</strong> совершенно бесплатно!
                         <br> В подарок!
                     </p>
-                    <div class="btn">Подробнее о стоимости</div>
+                    <button class="btn">Подробнее о стоимости</button>
                 </div>
             </div>
         </div>
@@ -110,11 +115,11 @@
     <div class="how-to">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="video"><img src="img/how-to-video-blank.png" alt=""></div>
-                    <!--<video src="https://vimeo.com/264842884"></video>-->
+                <div class="offset-lg-1 col-lg-6 col-md-12">
+                    <div id="video-wrap" class="video-wrap"></div>
+                    <iframe id="video" class="video hidden" src="https://player.vimeo.com/video/264842884"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5 col-md-12">
                     <div class="how-to-wrap">
                         <h2><strong>Как</strong> использовать <br> чудо-пробку?</h2>
                         <ul>
@@ -148,7 +153,8 @@
                         <div class="timer-wrap">
                             <p>До конца акции осталось: </p>
                             <div class="timer">
-                                <div class="day">01</div><div class="hour">23</div><div class="minute">59</div><div class="second">57</div>
+                                <div id="day">01</div>
+                                <div id="hour">23</div><div id="minute">59</div><div id="second">57</div>
                             </div>
                         </div>
                         <ul>
@@ -165,7 +171,7 @@
                         </div>
                         <textarea type="text" placeholder="Комментарий к заказу" class="user-comment"></textarea>
                         <br>
-                        <div class="btn">Оставить заявку</div>
+                        <button class="btn">Оставить заявку</button>
                     </div>
                 </div>
             </div>
@@ -198,7 +204,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti distinctio dolorem ducimus eaque eligendi fugiat</p>
                         </div>
                     </div>
-                    <div class="btn">Оставить свой отзыв</div>
+                    <button class="btn">Оставить свой отзыв</button>
                 </div>
             </div>
         </div>
@@ -218,7 +224,7 @@
                         </div>
                         <textarea type="text" placeholder="Комментарий к заказу" class="user-comment"></textarea>
                         <br>
-                        <div class="btn">Оставить заявку</div>
+                        <button class="btn">Оставить заявку</button>
                     </div>
                 </div>
             </div>
@@ -228,10 +234,10 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="logo"><img src="img/logo-black.png" alt=""></div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <ul class="menu">
                         <li><a href="">Как это работает?</a></li>
                         <li><a href="">Преимущества</a></li>
@@ -239,7 +245,7 @@
                         <li><a href="">Оформить заказ</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="contacts">
                         <p>Контакты: </p>
                         <div class="tel">
@@ -251,5 +257,12 @@
             </div>
         </div>
     </footer>
+    <script src="libs/easytimer.js/dist/easytimer.min.js"></script><script>
+        var timerInstance = new Timer();
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="libs/parallax.js-1.5.0/parallax.js"></script>
 </body>
 </html>

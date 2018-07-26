@@ -1,8 +1,23 @@
 body {
-    font-family: "Roboto Regular";
+    font-family: "RobotoRegular", sans-serif;
+    margin: 0;
 }
+.hidden {
+    display: none;
+}
+.main_mnu_button {
+     background-color: transparent;
+     border: none;
+     color: #000000;
+     font-size: 36px;
+}
+#menu-toggle i {
+    display: none;
+}
+
 ul {
     list-style: none;
+    padding: 0;
 }
 .price {
     position: absolute;
@@ -13,15 +28,16 @@ ul {
     z-index: 20;
     text-align: center;
     vertical-align: bottom;
-    font-family: "Roboto Light", sans-serif;
+    font-family: "RobotoLight", sans-serif;
 }
-.price p:first-child{
+.price p:first-child {
     margin: 15px 0 5px 0;
     text-decoration: line-through;
     font-size: 16px;
 }
-.price p:nth-child(2){
+.price p:nth-child(2) {
     font-size: 26px;
+    margin: 0;
 }
 .price .price-sale {
     position: absolute; bottom: 45px; right: -40px;
@@ -35,21 +51,58 @@ ul {
     color: #9b3dac;
     font-size: 24px;
 }
-/*.btn {*/
-    /*font: 18px "Roboto Regular";*/
-    /*font-weight: bold;*/
-    /*text-transform: uppercase;*/
-    /*background: #9c3fad;*/
-    /*border: 3px solid #9c3fad;*/
-    /*border-radius: 100px;*/
-    /*padding: 15px 35px;*/
-/*}*/
-/*.btn:hover {*/
-    /*background: #e98a2e;*/
-    /*border: 3px solid #623c16;*/
-/*}*/
+button.btn {
+    color: #fff;
+    display: inline-block;
+    font: 18px "RobotoBold";
+    text-transform: uppercase;
+    background: #9c3fad;
+    border: 3px solid #9c3fad;
+    border-radius: 100px;
+    padding: 15px 35px;
+    min-width: 265px;
+    margin-top: 25px;
+}
+button.btn:hover {
+    background: #e98a2e;
+    border-color: #623c16;
+}
 
-
+.user-response {
+    margin-top: 65px;
+    text-align: center;
+    display: block;
+}
+textarea {
+    border: 2px #e0e0e0 solid;
+    border-radius: 100px;
+    resize: none;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+textarea::placeholder {
+    color: #cfcfcf;
+}
+textarea:focus {
+    border-color: #e98a2e;
+    transition: .3s;
+}
+.user-contacts {
+    display: inline-block;
+}
+.user-contacts textarea{
+    width: 300px; height: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+.user-comment {
+    width: 485px; height: 115px;
+    border-radius: 20px;
+    vertical-align: top;
+    margin-left: 12px;
+}
 
 
 
@@ -58,16 +111,26 @@ ul {
 
 nav {
     position: fixed; top: 0; right: 0; left: 0;
-    padding-top: 35px;
+    padding-top: 25px;
     z-index: 30;
+    transition: 0.6s;
 }
-/*nav:before {*/
-    /*content: "";*/
-    /*!*background: url("../img/nav_background.png");*!*/
-    /*position: absolute; top: 0; right: 0; left: 0; bottom: 0;*/
-/*}*/
+nav:before {
+    content: '';
+    background-color: #fff;
+    position: absolute; top: 0; right: 0; left: 0;
+    height: 78px;
+    opacity: 0;
+    transform: translate(0, -100%);
+    transition: 0.3s;
+}
+nav .logo {
+    background: url("../img/logo.png");
+    display: block;
+    width: 170px; height: 45px;
+}
 nav a {
-    font: 14px "Roboto Slab Regular";
+    font: 14px "RobotoSlabRegular";
     text-decoration: none;
     color: #fff;
 }
@@ -76,9 +139,12 @@ nav a:hover {
     text-decoration: none;
     transition: 0.2s;
 }
+nav ul {
+    text-align: center;
+}
 nav .menu > li {
     display: inline-block;
-    margin: 10px 15px 0 15px;
+    margin: 0 15px 10px 15px;
 }
 nav .tel {
     float: right;
@@ -86,49 +152,65 @@ nav .tel {
     width: 200px;
 }
 nav .tel a:first-child {
-    font: 20px "Roboto Slab";
-    font-weight: bold;
+    font: 20px "RobotoSlabBold";
 }
 nav .tel a:last-child {
-    font: 12px "Roboto Light";
+    font: 12px "RobotoLight";
     text-decoration: underline;
 }
 nav .tel a:last-child:hover {
     font-size: 12px;
     text-decoration: none;
 }
+nav.scrolled {
+    padding-top: 20px;
+    transition: 0.2s;
+}
+nav.scrolled:before {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+nav.scrolled a {
+    color: #000;
+}
+nav.scrolled .logo {
+    background: url("../img/logo-black.png");
+}
+
 
 
 header {
-    background: url("../img/bg1.png") center center;
-    background-size: 100%;
-    height: 100vh;
+    background: url("../img/bg1.png") no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    /*height: 100vh;*/
     color: #fff;
     position: relative;
     overflow: hidden;
 }
 header .col-lg-12 {
-    height: 100vh;
+    height: 650px;
+    position: relative;
+    /*height: 100vh;*/
 }
 header .wrap {
-    position: absolute; bottom: 90px; left: 0;
-    font-family: "RobotoSlab", sans-serif;
-}
-header .wrap h2 {
-    font-size: 48px;
-    color: #9b3dac;
-    -webkit-text-stroke: 2px #43334d;
-    margin: 0;
-    font-weight: bold;
+    font-family: "RobotoSlabRegular", sans-serif;
+    z-index: 11;
+    padding-top: 150px;
 }
 header .wrap h1 {
-    text-transform: uppercase;
-    font-size: 48px;
+    font: 48px "RobotoSlabBold";
+    color: #9b3dac;
+    -webkit-text-stroke: 2px #43334d;
     margin: 15px 0 25px 0;
-    font-weight: bold;
+}
+header .wrap h1 strong {
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 0 transparent;
 }
 header .wrap p {
-    font: 20px "Roboto Slab Light";
+    font: 20px "RobotoSlabLight";
     margin: 0;
     width: 80%;
 }
@@ -159,19 +241,20 @@ header .wrap ul li:nth-child(3):before {
     color: #9b3dac;
     position: absolute; top: 2px; left: 0;
 }
-header .col-lg-12:before {
+header .wrap:before {
     content: '';
     background: url("../img/bottle.png") no-repeat;
     background-size: 90%;
     width: 657px; height: 550px;
-    position: absolute; bottom: 0; right: -100px;
+    /*height: 100vh; width: 100vh;*/
+    position: absolute; top: 50px; right: -140px;
     z-index: 10;
 }
 strong {
     font-family: RobotoSlabBold, sans-serif;
 }
 header .price {
-    bottom: 20px; right: 140px;
+    bottom: 100px; right: 110px;
 }
 
 
@@ -187,14 +270,14 @@ header .price {
     border-radius: 100%;
     position: relative;
 }
-.specification-bottle-wrap h2 {
-    position: absolute; top: 0; left: -200px;
+.specification h2 {
+    position: absolute; top: 100px; left: 150px;
     width: 300px;
     text-align: right;
-    font: 30px "Roboto Slab Regular";
+    font: 30px "RobotoSlabRegular";
     z-index: 10;
 }
-.specification-bottle-wrap h2:before {
+.specification h2:before {
     content: '';
     position: absolute; top: 0; right: 0;
     transform: translate(35%, -25%);
@@ -203,7 +286,7 @@ header .price {
     border-radius: 100%;
     z-index: -1;
 }
-.specification-bottle-wrap h2 strong {
+.specification h2 strong {
     text-transform: uppercase;
 }
 .specification-bottle-wrap img {
@@ -215,16 +298,17 @@ header .price {
 .specification .specification-item .txt{
     position: relative;
     display: inline-block;
-    font: 16px "Roboto Slab Regular";
+    font: 16px "RobotoSlabRegular";
     color: #fff;
     padding: 15px 30px;
     background: #9c3fad;
     border-radius: 5px;
     height: 70px;
+    transition: .4s;
 }
 .specification .specification-item:nth-child(1) {
     text-align: right;
-    position: absolute; right: calc(50% + 340px); top: 335px;
+    position: absolute; right: calc(50% + 340px); top: 340px;
 }
 .specification .specification-item:nth-child(2) {
     text-align: right;
@@ -239,15 +323,22 @@ header .price {
 .specification .specification-item:nth-child(5) {
     position: absolute; left: calc(50% + 290px); top: 500px;
 }
+.specification .specification-item .icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .specification .specification-item .icon {
     text-align: center;
-    line-height: 100px;
+    font-size: 0;
     position: absolute;
     transform: translate(-80%, -15%);
     width: 100px; height: 100px;
     background: #9c3fad;
     border: 4px solid #e98a2e;
     border-radius: 100%;
+    transition: .4s;
 }
 .specification .specification-item:nth-child(1) .icon, .specification .specification-item:nth-child(2) .icon {
     right: 0;
@@ -267,8 +358,10 @@ header .price {
     margin-right: 8px;
 }
 
+
+
 .special-offer {
-    font-family: "Roboto Slab Regular", sans-serif;
+    font-family: "RobotoSlabRegular", sans-serif;
     text-align: center;
     color: #fff;
     background: url("../img/special-offer-bg.png") no-repeat center center;
@@ -289,27 +382,51 @@ header .price {
 .special-offer p strong {
     text-transform: uppercase;
 }
-.special-offer .btn {
-    font: 18px "Roboto Regular";
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #9c3fad;
-    border: 2px solid #9c3fad;
-    border-radius: 100px;
-    padding: 15px 35px;
-}
-.special-offer .btn:hover {
-    background: #e98a2e;
-    border: 2px solid #623c16;
-}
 
 
 .how-to {
     padding: 110px 0;
 }
 .how-to .video {
-    display: inline-block;
-    vertical-align: top;
+    width: 552px; height: 310px;
+    position: relative;
+}
+.how-to .video-wrap {
+    width: 552px; height: 310px;
+    background: url("../img/how-to-video-blank.png");
+    background-size: cover;
+    position: absolute; top: 0; right: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    /*pointer-events: none;*/
+    z-index: 1;
+}
+.how-to .video-wrap:hover {
+    background: url("../img/how-to-video-hover.png") no-repeat;
+}
+.how-to .video-wrap:before {
+    content: '';
+    width: 100px; height: 100px;
+    background: #e98a2e;
+    border-radius: 100%;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3s;
+    /*pointer-events: none;*/
+    z-index: 2;
+}
+.how-to .video-wrap:hover:before {
+    width: 115px; height: 115px;
+}
+.how-to .video-wrap:after {
+    content: url("../img/play-video.png");
+    width: 40px; height: 46px;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    /*pointer-events: none;*/
+    z-index: 3;
 }
 .how-to .how-to-wrap {
     letter-spacing: 0;
@@ -318,15 +435,14 @@ header .price {
     padding-left: 30px;
 }
 .how-to .how-to-wrap h2{
-    font: 36px "Roboto Slab";
+    font: 36px "RobotoSlabRegular";
     margin: -10px 0 40px;
 }
 .how-to .how-to-wrap h2 strong{
-    font: 36px "Roboto Slab";
-    font-weight: bold;
+    font: 36px "RobotoSlabBold";
 }
 .how-to .how-to-wrap ul {
-    font: 20px "Roboto Light";
+    font: 20px "RobotoLight";
     font-style: italic;
     padding: 0;
 }
@@ -364,27 +480,30 @@ header .price {
     color: #fff;
 }
 .sale h2 {
-    font: 36px "Roboto Slab";
-    font-weight: bold;
+    font: 36px "RobotoSlabBold";
     margin-left: 20px;
     margin-bottom: 25px;
 }
 .sale h2 strong {
     text-transform: uppercase;
 }
+
+.sale .sale-description-wrap {
+    margin-left: 20px;
+}
 .sale .sale-description-wrap > p {
     display: inline-block;
     max-width: calc(50% - 20px);
-    font: 24px "Roboto Slab";
-    margin-left: 20px;
+    font: 24px "RobotoSlabRegular";
 }
 .sale .timer-wrap {
     display: inline-block;
     vertical-align: top;
+    text-align: right;
     width: 49%;
 }
 .sale .timer-wrap p {
-    font: 18px "Roboto Light";
+    font: 18px "RobotoLight";
     font-style: italic;
     margin-bottom: 5px;
 }
@@ -422,7 +541,7 @@ header .price {
 }
 
 .sale .sale-description-wrap ul {
-    font: 18px "Roboto Light";
+    font: 18px "RobotoLight";
     font-style: italic;
     padding: 0;
     margin: 25px 0 0 20px;
@@ -446,65 +565,12 @@ header .price {
 }
 
 
-.sale .user-response {
-    margin-top: 65px;
-    text-align: center;
-    display: block;
-}
-.sale textarea {
-    border: 2px #e0e0e0 solid;
-    border-radius: 100px;
-    resize: none;
-    outline: none;
-    color: #000;
-    font-size: 18px;
-    padding-left: 30px;
-    line-height: 40px;
-}
-.sale textarea::placeholder {
-    color: #cfcfcf;
-    font: 18px "Roboto Light";
-    padding-top: 10px;
-}
-.sale textarea:focus {
-    border-color: #e98a2e;
-    transition: .3s;
-}
-.user-contacts {
-    display: inline-block;
-}
-.user-contacts textarea{
-    width: 300px; height: 50px;
-    display: block;
-    margin-bottom: 10px;
-}
-.sale .user-comment {
-    width: 485px; height: 115px;
-    border-radius: 20px;
-    vertical-align: top;
-    margin-left: 12px;
-}
-.sale .btn {
-    color: #fff;
-    font: 18px "Roboto Regular";
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #9c3fad;
-    border: 2px solid #9c3fad;
-    border-radius: 100px;
-    padding: 10px 35px;
-    margin-top: 25px;
-}
-.sale .btn:hover {
-    background: #e98a2e;
-    border: 2px solid #623c16;
-}
 
 .wholesale {
     padding: 25px 0;
     background: #424242;
     color: #fff;
-    font: 24px "Roboto Light";
+    font: 24px "RobotoLight";
     text-align: center;
 }
 .wholesale a {
@@ -523,7 +589,7 @@ header .price {
     background: #fafafa;
 }
 .feedback h2{
-    font: 36px "Roboto Slab";
+    font: 36px "RobotoSlabRegular";
     text-transform: uppercase;
     margin-bottom: 110px;
 }
@@ -534,7 +600,7 @@ header .price {
     margin: 0 15px;
 }
 .feedback .feedback-item p:first-child {
-    font: 18px "Roboto Slab";
+    font: 18px "RobotoSlabRegular";
     background: #eee;
     padding: 50px 0 15px;
     margin: 0;
@@ -548,25 +614,14 @@ header .price {
     transform: translate(125%, -50%);
 }
 .feedback .feedback-item p:last-child {
-    font: 14px "Roboto Regular";
+    font: 14px "RobotoRegular";
     padding: 20px 35px;
     margin: 0;
 }
 .feedback .btn {
-    color: #fff;
-    font: 18px "Roboto Regular";
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #9c3fad;
-    border: 2px solid #9c3fad;
-    border-radius: 100px;
-    padding: 15px 35px;
     margin-top: 60px;
 }
-.feedback .btn:hover {
-    background: #e98a2e;
-    border: 2px solid #623c16;
-}
+
 
 .questions {
     padding: 90px 0;
@@ -575,67 +630,13 @@ header .price {
 }
 .questions h2 {
     text-transform: uppercase;
-    font: 36px "Roboto Slab";
+    font: 36px "RobotoSlabRegular";
     margin-bottom: 35px;
 }
 .questions p {
-    font: 18px "Roboto Regular";
+    font: 18px "RobotoRegular";
 }
 
-
-.questions .user-response {
-    margin-top: 35px;
-    text-align: center;
-    display: block;
-}
-.questions textarea {
-    border: 2px #e0e0e0 solid;
-    border-radius: 100px;
-    resize: none;
-    outline: none;
-    color: #000;
-    font-size: 18px;
-    padding-left: 30px;
-    line-height: 40px;
-}
-.questions textarea::placeholder {
-    color: #cfcfcf;
-    font: 18px "Roboto Light";
-    padding-top: 10px;
-}
-.questions textarea:focus {
-    border-color: #e98a2e;
-    transition: .3s;
-}
-.user-contacts {
-    display: inline-block;
-}
-.user-contacts textarea{
-    width: 300px; height: 50px;
-    display: block;
-    margin-bottom: 10px;
-}
-.questions .user-comment {
-    width: 485px; height: 115px;
-    border-radius: 20px;
-    vertical-align: top;
-    margin-left: 12px;
-}
-.questions .btn {
-    color: #fff;
-    font: 18px "Roboto Regular";
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #9c3fad;
-    border: 2px solid #9c3fad;
-    border-radius: 100px;
-    padding: 10px 35px;
-    margin-top: 25px;
-}
-.questions .btn:hover {
-    background: #e98a2e;
-    border: 2px solid #623c16;
-}
 
 footer {
     padding: 32px 0;
@@ -645,7 +646,7 @@ footer .logo {
     margin-top: 60px;
 }
 footer a {
-     font: 16px "Roboto Slab";
+     font: 16px "RobotoSlabRegular";
      text-decoration: none;
      color: #000;
 }
@@ -664,10 +665,8 @@ footer .menu > li:last-child {
     margin-bottom: 0;
 }
 footer .contacts > p{
-    font: 18px "Roboto Slab";
-    font-weight: bolder;
+    font: 18px "RobotoSlabRegular";
 }
 footer .contacts .tel{
-    font: 16px "Roboto Light";
-    font-weight: lighter;
+    font: 16px "RobotoLight";
 }
