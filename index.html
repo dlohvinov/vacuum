@@ -3,42 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>vacuum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.css">
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+    <div id="popup-quit" class="popup-background hidden"></div>
+    <div id="popup-wrap" class="popup-wrap hidden">
+        <i id="popup-cancel" class="fas fa-times"></i>
+        <h3>Сотрудничество</h3>
+        <p>По вопросам сотрудничества / оптовых закупок - пишите сюда. Свяжемся с вами в ближайшее время по телефону</p>
+        <input type="text" placeholder="Ваше имя" class="name">
+        <input type="text" placeholder="Ваш номер телефона" class="phone">
+        <input type="text" placeholder="Ваша эл. почта" class="email">
+        <button class="btn">Оставить заявку</button>
+    </div>
     <nav id="nav">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
-                    <a href="" class="logo"></a>
+                <div class="col-4 col-sm-2">
+                    <a id="logo" class="logo"></a>
                 </div>
-                <div class="col-lg-8 col-sm-12">
-                    <div id="menu-toggle">
-                        <ul class="menu">
-                            <li><a href="">Как это работает?</a></li>
-                            <li><a href="">Преимущества</a></li>
-                            <li><a href="">Сотрудничество</a></li>
-                            <li><a href="">Оформить заказ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2">
+                <div class="col-8 col-sm-7 offset-sm-3 col-md-5 col-lg-2 offset-md-5 offset-lg-0 order-md-1 order-lg-2 tel-and-menu">
                     <div class="tel">
                         <a href="tel:">+38 (099) 133-06-66</a>
                         <a href="">Заказать обратный звонок</a>
                     </div>
+                    <button class="main_mnu_button"><i class="fa fa-bars"></i></button>
                 </div>
-                <!--<button class="main_mnu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>-->
+                <div class="col-lg-8 col-md-12 order-md-2 order-lg-1">
+                    <ul class="menu">
+                        <li id="specification-scroll"><a>Преимущества</a></li>
+                        <li id="how-to-scroll"><a>Как это работает?</a></li>
+                        <li id="popup-call"><a>Сотрудничество</a></li>
+                        <li id="sale-scroll"><a>Оформить заказ</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header>
+    <header id="header">
          <div class="container">
              <div class="row">
                  <div class="col-lg-12">
@@ -62,12 +73,12 @@
              </div>
          </div>
     </header>
-    <div class="specification">
+    <div id="specification" class="specification">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="specification-bottle-wrap">
-                        <img src="img/spec_bottle.png" alt="">
+                        <img id="parallax" src="img/spec_bottle.png" alt="">
                     </div>
                     <h2>Качественная вакуумная пробка <strong>vacuum stopper:</strong></h2>
                     <div>
@@ -112,12 +123,12 @@
         </div>
     </div>
 
-    <div class="how-to">
+    <div id="how-to" class="how-to">
         <div class="container">
             <div class="row">
                 <div class="offset-lg-1 col-lg-6 col-md-12">
                     <div id="video-wrap" class="video-wrap"></div>
-                    <iframe id="video" class="video hidden" src="https://player.vimeo.com/video/264842884"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div id="iframe-wrap"></div>
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <div class="how-to-wrap">
@@ -133,7 +144,7 @@
         </div>
     </div>
 
-    <div class="sale">
+    <div id="sale" class="sale">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -154,7 +165,7 @@
                             <p>До конца акции осталось: </p>
                             <div class="timer">
                                 <div id="day">01</div>
-                                <div id="hour">23</div><div id="minute">59</div><div id="second">57</div>
+                                <div id="hour">23</div><div id="minute">59</div><div id="second">59</div>
                             </div>
                         </div>
                         <ul>
@@ -190,7 +201,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2><strong>Отзывы</strong> наших клиентов</h2>
-                    <div class="owl-carousel">
+                    <div class="owl-carousel owl-loaded owl-theme">
                         <div class="feedback-item">
                             <p>Геннадий, г. Киев</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti distinctio dolorem ducimus eaque eligendi fugiat</p>
@@ -204,7 +215,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti distinctio dolorem ducimus eaque eligendi fugiat</p>
                         </div>
                     </div>
-                    <button class="btn">Оставить свой отзыв</button>
+                    <button class="btn triggered">Оставить свой отзыв</button>
                 </div>
             </div>
         </div>
@@ -234,18 +245,18 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class=" order-2 order-sm-1 col-sm-5 col-md-3">
                     <div class="logo"><img src="img/logo-black.png" alt=""></div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-12 col-md-5 order-sm-2">
                     <ul class="menu">
-                        <li><a href="">Как это работает?</a></li>
-                        <li><a href="">Преимущества</a></li>
-                        <li><a href="">Сотрудничество</a></li>
-                        <li><a href="">Оформить заказ</a></li>
+                        <li><a id="footer-specification-scroll">Преимущества</a></li>
+                        <li><a id="footer-how-to-scroll">Как это работает?</a></li>
+                        <li><a id="footer-popup-call">Сотрудничество</a></li>
+                        <li><a id="footer-sale-scroll">Оформить заказ</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="offset-sm-2 col-sm-5 offset-md-0 col-md-4 order-md-2 order-sm-1 order-3">
                     <div class="contacts">
                         <p>Контакты: </p>
                         <div class="tel">
@@ -257,12 +268,12 @@
             </div>
         </div>
     </footer>
-    <script src="libs/easytimer.js/dist/easytimer.min.js"></script><script>
-        var timerInstance = new Timer();
-    </script>
     <script src="js/jquery.js"></script>
     <script src="js/common.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="libs/parallax.js-1.5.0/parallax.js"></script>
+    <script src="libs/parallax.min.js"></script>
+    <script src="libs/scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="libs/owl.carousel/owl.carousel.min.js"></script>
+    <!--<script src="libs/Cookies-master/src/cookies.js"></script>-->
 </body>
 </html>
