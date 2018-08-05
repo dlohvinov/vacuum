@@ -7,14 +7,12 @@ body {
 }
 .main_mnu_button {
     display: none;
-    /*position: absolute; top: 40px; right: 20px;*/
-    /*transform: translateY(-50%);*/
     background-color: #eee;
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
     color: #000;
-    font-size: 36px;
+    font-size: 24px;
     cursor: pointer;
 }
 ul {
@@ -29,7 +27,6 @@ ul {
     border-radius: 100%;
     z-index: 20;
     text-align: center;
-    vertical-align: bottom;
     font-family: "RobotoLight", sans-serif;
 }
 .price p:first-child {
@@ -52,6 +49,11 @@ ul {
     text-align: center;
     color: #9b3dac;
     font-size: 24px;
+    transition: 0.2s;
+}
+.price:hover .price-sale {
+    width: 80px; height: 80px;
+    line-height: 75px;
 }
 button.btn {
     color: #fff;
@@ -137,7 +139,6 @@ textarea:focus {
     cursor: pointer;
 }
 .popup-wrap #popup-cancel:hover {
-    position: absolute; top: 15px; right: 15px;
     color: #9c3fad;
 }
 .popup-wrap.hidden {
@@ -201,11 +202,11 @@ nav a {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    transition: 0.2s;
 }
 nav a:hover {
     color: #9b3dac;
     text-decoration: none;
-    transition: 0.2s;
 }
 nav ul {
     text-align: center;
@@ -242,14 +243,14 @@ nav.scrolled:before {
     opacity: 1;
     transform: translate(0, 0);
 }
+nav.scrolled .logo {
+    background: url("../img/logo-black.png");
+}
 nav.scrolled a {
     color: #000;
 }
 nav.scrolled a:hover {
     color: #9b3dac;
-}
-nav.scrolled .logo {
-    background: url("../img/logo-black.png");
 }
 
 
@@ -262,7 +263,6 @@ header {
     color: #fff;
     position: relative;
     overflow: hidden;
-    /*z-index: -100;*/
     z-index: 0;
 }
 header .col-lg-12 {
@@ -293,7 +293,6 @@ header .wrap p {
 }
 header .wrap ul {
     margin-top: 40px;
-    padding-left: 0;
 }
 header .wrap ul li {
     font-size: 18px;
@@ -327,9 +326,9 @@ header .wrap:before {
     position: absolute; top: 50px; right: -140px;
     z-index: 10;
 }
-strong {
-    font-family: RobotoSlabBold, sans-serif;
-}
+/*strong {*/
+    /*font-family: RobotoSlabBold, sans-serif;*/
+/*}*/
 header .price {
     bottom: 100px; right: 110px;
 }
@@ -343,7 +342,6 @@ header .price {
     margin: 140px auto;
     width: 420px; height: 420px;
     background-color: #e98a2e;
-    background-size: 420px;
     border-radius: 100%;
     position: relative;
 }
@@ -372,17 +370,6 @@ header .price {
     width: 70%;
 }
 
-.specification .specification-item .txt{
-    position: relative;
-    display: inline-block;
-    font: 16px "RobotoSlabRegular";
-    color: #fff;
-    padding: 15px 30px;
-    background: #9c3fad;
-    border-radius: 5px;
-    height: 70px;
-    transition: .4s;
-}
 .specification .specification-item:nth-child(1) {
     text-align: right;
     position: absolute; right: calc(50% + 340px); top: 340px;
@@ -400,11 +387,16 @@ header .price {
 .specification .specification-item:nth-child(5) {
     position: absolute; left: calc(50% + 290px); top: 500px;
 }
-.specification .specification-item .icon img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.specification .specification-item .txt{
+    position: relative;
+    display: inline-block;
+    font: 16px "RobotoSlabRegular";
+    color: #fff;
+    padding: 15px 30px;
+    background: #9c3fad;
+    border-radius: 5px;
+    height: 70px;
+    transition: .4s;
 }
 .specification .specification-item .icon {
     text-align: center;
@@ -417,19 +409,23 @@ header .price {
     border-radius: 100%;
     transition: .4s;
 }
+.specification .specification-item .icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .specification .specification-item:nth-child(1) .icon, .specification .specification-item:nth-child(2) .icon {
     right: 0;
     transform: translate(80%, -15%);
 }
-.specification-item:hover .icon {
-    border-color: #fff;
-    transition: .5s;
-}
 .specification-item:hover .txt{
     background-color: #fff;
     color: #000;
-    transition: .4s;
     margin-left: 8px;
+}
+.specification-item:hover .icon {
+    border-color: #fff;
 }
 .specification-item:nth-child(1):hover .txt, .specification-item:nth-child(2):hover .txt {
     margin-right: 8px;
@@ -475,7 +471,6 @@ header .price {
     position: absolute; top: 0; right: 1px;
     cursor: pointer;
     transition: 0.3s;
-    /*pointer-events: none;*/
     z-index: 1;
 }
 .how-to .video-wrap:hover {
@@ -490,7 +485,6 @@ header .price {
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: 0.3s;
-    /*pointer-events: none;*/
     z-index: 2;
 }
 .how-to .video-wrap:hover:before {
@@ -502,21 +496,22 @@ header .price {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    /*pointer-events: none;*/
     z-index: 3;
 }
+
+
 .how-to .how-to-wrap {
     letter-spacing: 0;
     display: inline-block;
     vertical-align: top;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 .how-to .how-to-wrap h2{
     font: 36px "RobotoSlabRegular";
     margin: -10px 0 40px;
 }
 .how-to .how-to-wrap h2 strong{
-    font: 36px "RobotoSlabBold";
+    font-family: "RobotoSlabBold", sans-serif;
 }
 .how-to .how-to-wrap ul {
     font: 20px "RobotoLight";
@@ -564,7 +559,6 @@ header .price {
 .sale h2 strong {
     text-transform: uppercase;
 }
-
 .sale .sale-description-wrap {
     margin-left: 20px;
 }
@@ -590,6 +584,9 @@ header .price {
     position: relative;
     padding-bottom: 10px;
     width: 50px;
+}
+.sale .timer-wrap .timer div:nth-child(3) {
+    margin-left: 5px;
 }
 .sale .timer-wrap .timer div:nth-child(4) {
     margin-left: -5px;
@@ -643,6 +640,7 @@ header .price {
     width: 31px; height: 31px;
     position: absolute; top: 0; left: 0;
 }
+
 
 
 

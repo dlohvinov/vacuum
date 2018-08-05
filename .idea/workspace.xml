@@ -5,15 +5,93 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bottle-md.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/bottle-md.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/parallax.js-1.5.0/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/parallax.js-1.5.0/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/parallax.js-1.5.0/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/parallax.js-1.5.0/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/parallax.js-1.5.0/parallax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/parallax.js-1.5.0/parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/UNLICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/src/cookies.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/src/cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/tests/lib/jasmine-1.3.1/MIT.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/tests/lib/jasmine-1.3.1/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/tests/lib/jasmine-1.3.1/jasmine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/tests/lib/jasmine-1.3.1/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/tests/spec-runner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Cookies-master/tests/spec/cookies-spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/dist/easytimer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/dist/easytimer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/dist/examples.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/dist/examples.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/rollup.config.examples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/rollup.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/easytimer/customEventPolyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/easytimer/easytimer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/easytimer/leftPadding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/easytimer/timeCounter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/examples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/examples/examples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/src/examples/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/test/timer.spec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/easytimer.js/test/timer.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/.nvmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/images/layer1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/images/layer2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/images/layer3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/images/layer4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/images/layer5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/images/layer6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/assets/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/destroy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/hoveronly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/input_element.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/interactive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/relative.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/selector.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/separate_axis_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/examples/pages/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax-master/src/parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/.jscsrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/jquery.scrollTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/jquery.scrollTo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/ElemMaxY-compat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/ElemMaxY-quirks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/WinMaxY-compat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/WinMaxY-quirks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/WinMaxY-to-iframe-compat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/WinMaxY-to-iframe-quirks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scrollTo/tests/test.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,32 +108,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="258" column="80" selection-start-line="258" selection-start-column="80" selection-end-line="258" selection-end-column="80" />
+            <state relative-caret-position="357">
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="678" selection-start-line="678" selection-end-line="707" selection-end-column="1" />
-              <folding>
-                <marker date="1533296870719" expanded="true" signature="10551:10572" ph="..." />
-              </folding>
+            <state relative-caret-position="-7269">
+              <caret line="275" column="23" lean-forward="true" selection-start-line="275" selection-start-column="23" selection-end-line="275" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/media.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3920">
-              <caret line="232" column="42" lean-forward="true" selection-start-line="232" selection-start-column="42" selection-end-line="232" selection-end-column="42" />
-              <folding>
-                <element signature="e#53#1009#0" />
-              </folding>
+            <state relative-caret-position="8500">
+              <caret line="500" column="19" selection-start-line="500" selection-start-column="19" selection-end-line="500" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -84,6 +156,7 @@
       <find>vide</find>
       <find>.btn</find>
       <find>tel</find>
+      <find>pop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,10 +171,11 @@
         <option value="D:/New folder/START NEW!/index.html" />
         <option value="$PROJECT_DIR$/js/blank.html" />
         <option value="$PROJECT_DIR$/libs/countdown.js" />
-        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/libs/cookies.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/css/media.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -112,14 +186,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/libs/Cookies-master/package.json" />
-      <path value="$PROJECT_DIR$/libs/easytimer.js/package.json" />
-      <path value="$PROJECT_DIR$/libs/parallax-master/package.json" />
-      <path value="$PROJECT_DIR$/libs/scrollTo/package.json" />
-    </packageJsonPaths>
+    <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -133,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,10 +219,16 @@
               <item name="vacuum" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="vacuum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vacuum" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,15 +302,18 @@
       <workItem from="1533116320668" duration="14640000" />
       <workItem from="1533136182021" duration="2089000" />
       <workItem from="1533203659347" duration="5314000" />
-      <workItem from="1533286598334" duration="12101000" />
+      <workItem from="1533286598334" duration="12371000" />
+      <workItem from="1533319849907" duration="1494000" />
+      <workItem from="1533474923003" duration="4665000" />
+      <workItem from="1533493841874" duration="238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197408000" />
+    <option name="totallyTimeSpent" value="204075000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1904762" />
@@ -270,13 +347,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7922">
-          <caret line="466" column="18" lean-forward="true" selection-start-line="466" selection-start-column="18" selection-end-line="466" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
@@ -543,18 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/countdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/countdown.js" />
     <entry file="file://$PROJECT_DIR$/libs/js-cookie-master/src/js_cookie.js" />
     <entry file="file://$PROJECT_DIR$/libs/js-cookie-master/test/amd-config.js" />
-    <entry file="file://$PROJECT_DIR$/libs/parallax.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/parallax.min.js" />
     <entry file="file://D:/New folder/START NEW!/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -565,37 +627,38 @@
     <entry file="file://$PROJECT_DIR$/img/left_arrow.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
+    <entry file="file://$PROJECT_DIR$/libs/cookies.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="258" column="80" selection-start-line="258" selection-start-column="80" selection-end-line="258" selection-end-column="80" />
+        <state relative-caret-position="357">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="678" selection-start-line="678" selection-end-line="707" selection-end-column="1" />
-          <folding>
-            <marker date="1533296870719" expanded="true" signature="10551:10572" ph="..." />
-          </folding>
+        <state relative-caret-position="1309">
+          <caret line="113" column="58" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/media.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3920">
-          <caret line="232" column="42" lean-forward="true" selection-start-line="232" selection-start-column="42" selection-end-line="232" selection-end-column="42" />
-          <folding>
-            <element signature="e#53#1009#0" />
-          </folding>
+        <state relative-caret-position="8500">
+          <caret line="500" column="19" selection-start-line="500" selection-start-column="19" selection-end-line="500" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7269">
+          <caret line="275" column="23" lean-forward="true" selection-start-line="275" selection-start-column="23" selection-end-line="275" selection-end-column="23" />
         </state>
       </provider>
     </entry>
