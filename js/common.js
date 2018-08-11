@@ -1,26 +1,22 @@
 "use strict";
 //popup
-var popupBackground = document.getElementById('popup-background');
-var popupCancel = document.getElementById('popup-cancel');
-var popupWrap = document.getElementById('popup-wrap');
+let popupCancel = document.getElementsByClassName('popup-cancel');
+let popupWrap = document.getElementsByClassName('popup-wrap')[0];
 
-var popupCall = document.getElementById('popup-call');
-var footerPopupCall = document.getElementById('footer-popup-call');
+let popupCall = document.getElementsByClassName('popup-call');
 
 function showPopup() {
-    popupBackground.classList.remove('hidden');
     popupWrap.classList.remove('hidden');
 }
 function hidePopup() {
-    popupBackground.classList.add('hidden');
     popupWrap.classList.add('hidden');
 }
 
-popupBackground.onclick = function () {hidePopup()};
-popupCancel.onclick = function () {hidePopup()};
+popupCancel[0].onclick = function () {hidePopup()};
+popupCancel[1].onclick = function () {hidePopup()};
 
-popupCall.onclick = function () {showPopup()};
-footerPopupCall.onclick = function () {showPopup()};
+popupCall[0].onclick  = function () {showPopup()};
+popupCall[1].onclick  = function () {showPopup()};
 
 
 //main menu burger
@@ -29,7 +25,7 @@ $(".main_mnu_button").click(function() {
 });
 
 //nav changes color while scrolling
-var nav = document.getElementById('nav');
+let nav = document.getElementsByTagName('nav')[0];
 function navColorChanger () {
     if (window.pageYOffset != 0 ) {
         nav.classList.add("scrolled");
@@ -43,35 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {navColorChanger()});
 
 
 //scroll menu
-$(document).ready(function (){
-    $("#logo").click(function () {
-        $("html, body").animate({scrollTop: $('#header').offset().top}, 1000)
-    });
-    $("#how-to-scroll").click(function () {
-        $("html, body").animate({ scrollTop: $('#how-to').offset().top }, 1000);
-    });
-    $("#specification-scroll").click(function () {
-        $("html, body").animate({scrollTop: $('#specification').offset().top}, 1000)
-    });
-    $("#sale-scroll").click(function () {
-        $("html, body").animate({scrollTop: $('#sale').offset().top}, 1000)
-    });
-    $("#footer-how-to-scroll").click(function () {
-        $("html, body").animate({ scrollTop: $('#how-to').offset().top }, 1000);
-    });
-    $("#footer-specification-scroll").click(function () {
-        $("html, body").animate({scrollTop: $('#specification').offset().top}, 1000)
-    });
-    $("#footer-sale-scroll").click(function () {
-        $("html, body").animate({scrollTop: $('#sale').offset().top}, 1000)
-    });
+$('nav li a').click(function () {
+    $("html, body").animate({scrollTop: $($(this).attr('data-scroll-to')).offset().top}, 1000)
+});
+$('footer li a').click(function () {
+    $("html, body").animate({scrollTop: $($(this).attr('data-scroll-to')).offset().top}, 1000)
 });
 
 
 // scroll accentuation
-var specification = document.getElementById('specification'), specificationScroll = document.getElementById('specification-scroll');
-var howTo = document.getElementById('how-to'), howToScroll = document.getElementById('how-to-scroll');
-var sale = document.getElementById('sale'), saleScroll = document.getElementById('sale-scroll');
+let specification = document.getElementById('specification'), specificationScroll = document.getElementById('specification-scroll');
+let howTo = document.getElementById('how-to'), howToScroll = document.getElementById('how-to-scroll');
+let sale = document.getElementById('sale'), saleScroll = document.getElementById('sale-scroll');
 
 function getElementTopHeight(elem) {
     var box = elem.getBoundingClientRect();
@@ -80,22 +59,24 @@ function getElementTopHeight(elem) {
 function getElementBottomHeight(elem) {
     return getElementTopHeight(elem) + elem.offsetHeight;
 }
+function isInViewport(elem) {
+        return pageYOffset+(document.documentElement.clientHeight*0.50) >= getElementTopHeight(elem) &&
+            (pageYOffset+(document.documentElement.clientHeight*0.50) <= getElementBottomHeight(elem));
+
+}
 
 function navCurrent () {
-    if(pageYOffset+(document.documentElement.clientHeight*0.50) >= getElementTopHeight(specification) &&
-        (pageYOffset+(document.documentElement.clientHeight*0.50) <= getElementBottomHeight(specification))){
+    if(isInViewport(specification)){
         specificationScroll.classList.add('accentuated');
     }
     else {
         specificationScroll.classList.remove('accentuated');
-        if(pageYOffset+(document.documentElement.clientHeight*0.50) >= getElementTopHeight(howTo) &&
-            (pageYOffset+(document.documentElement.clientHeight*0.30) <= getElementBottomHeight(howTo))){
+        if(isInViewport(howTo)){
             howToScroll.classList.add('accentuated');
         }
         else {
             howToScroll.classList.remove('accentuated');
-            if(pageYOffset+(document.documentElement.clientHeight*0.25) >= getElementTopHeight(sale) &&
-                (pageYOffset+(document.documentElement.clientHeight*0.50) <= getElementBottomHeight(sale))){
+            if(isInViewport(sale)){
                 saleScroll.classList.add('accentuated');
             }
             else {
@@ -108,7 +89,7 @@ window.onscroll = function () {navCurrent(), navColorChanger(), parallaxScroll()
 
 
 //bottle parallax
-var parallax = document.getElementById('parallax');
+let parallax = document.getElementById('parallax');
 function parallaxScroll() {
     if ($(window).width() >= 992) {
         if(pageYOffset >= getElementTopHeight(parallax) ||
@@ -123,8 +104,8 @@ function parallaxScroll() {
 
 
 //hiding preview and showing video
-var videoActive = document.getElementById('video-wrap');
-var parent = document.getElementById('iframe-wrap');
+let videoActive = document.getElementsByClassName('video-wrap')[0];
+let parent = document.getElementById('iframe-wrap');
 videoActive.onclick = function () {
         videoActive.classList.add('hidden');
         var iframe = document.createElement("iframe");
@@ -164,12 +145,12 @@ $(document).ready(function(){
 });
 
 
-var countDownDate = new Date();
+let countDownDate = new Date();
 countDownDate.setDate(countDownDate.getDate() + 2, countDownDate.getHours(), countDownDate.getMinutes());
 
 Cookies.set('countdownDate', countDownDate);
-var end = Cookies.get('countdownDate');
-var res = new Date(Date.parse(end));
+let end = Cookies.get('countdownDate');
+let res = new Date(Date.parse(end));
 if (!(res instanceof Date)) {
    // Cookies.set('countdownDate', countDownDate, { expires: 7 });
     Cookies.set('countdownDate', countDownDate);
@@ -177,14 +158,14 @@ if (!(res instanceof Date)) {
     res = new Date(Date.parse(end));
 }
 // alert(res.toString());
-var x = setInterval(function() {
-    var now = new Date();
+let x = setInterval(function() {
+    let now = new Date();
 
-    var distance = res - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let distance = res - now;
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
     document.getElementById("day").innerHTML = "0"+days;

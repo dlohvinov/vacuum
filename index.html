@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>vacuum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#9c3fad">
 
     <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -14,21 +15,21 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <div id="popup-background" class="popup-background hidden"></div>
-    <div id="popup-wrap" class="popup-wrap hidden">
-        <i id="popup-cancel" class="fas fa-times"></i>
+    <form class="popup-wrap hidden">
+        <i id="popup-cancel" class="popup-cancel fas fa-times"></i>
         <h3>Сотрудничество</h3>
         <p>По вопросам сотрудничества / оптовых закупок - пишите сюда. Свяжемся с вами в ближайшее время по телефону</p>
         <input type="text" placeholder="Ваше имя" class="name">
         <input type="text" placeholder="Ваш номер телефона" class="phone">
         <input type="text" placeholder="Ваша эл. почта" class="email">
         <button class="btn">Оставить заявку</button>
-    </div>
-    <nav id="nav">
+    </form>
+    <div class="popup-background popup-cancel hidden"></div>
+    <nav>
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2">
-                    <a id="logo" class="logo"></a>
+                    <a class="logo"></a>
                 </div>
                 <div class="col-8 col-sm-7 offset-sm-3 col-md-5 offset-md-5 order-md-1 col-lg-2 offset-lg-0 order-lg-2 tel-and-menu">
                     <div class="tel">
@@ -39,17 +40,17 @@
                 </div>
                 <div class="col-md-12 order-md-2 col-lg-8 order-lg-1">
                     <ul class="menu">
-                        <li id="specification-scroll" class="specification-scroll"><a>Преимущества</a></li>
-                        <li id="how-to-scroll"><a>Как это работает?</a></li>
-                        <li id="popup-call"><a>Сотрудничество</a></li>
-                        <li id="sale-scroll"><a>Оформить заказ</a></li>
+                        <li><a id="specification-scroll" data-scroll-to="#specification">Преимущества</a></li>
+                        <li><a id="how-to-scroll" data-scroll-to="#how-to">Как это работает?</a></li>
+                        <li><a class="popup-call">Сотрудничество</a></li>
+                        <li><a id="sale-scroll" data-scroll-to="#sale">Оформить заказ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header id="header">
+    <header>
          <div class="container">
              <div class="row">
                  <div class="col-lg-12">
@@ -127,7 +128,7 @@
         <div class="container">
             <div class="row">
                 <div class="offset-lg-1 col-lg-6 col-md-12">
-                    <div id="video-wrap" class="video-wrap"></div>
+                    <div class="video-wrap"></div>
                     <div id="iframe-wrap"></div>
                 </div>
                 <div class="col-lg-5 col-md-12">
@@ -177,10 +178,10 @@
                 <div class="col-lg-12">
                     <div class="user-response">
                         <div class="user-contacts">
-                            <textarea type="text" placeholder="Ваше имя" class="name"></textarea>
-                            <textarea type="text" placeholder="Ваш номер телефона" class="phone"></textarea>
+                            <textarea placeholder="Ваше имя" class="name"></textarea>
+                            <textarea placeholder="Ваш номер телефона" class="phone"></textarea>
                         </div>
-                        <textarea type="text" placeholder="Комментарий к заказу" class="user-comment"></textarea>
+                        <textarea placeholder="Комментарий к заказу" class="user-comment"></textarea>
                         <br>
                         <button class="btn">Оставить заявку</button>
                     </div>
@@ -215,7 +216,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti distinctio dolorem ducimus eaque eligendi fugiat</p>
                         </div>
                     </div>
-                    <button class="btn triggered">Оставить свой отзыв</button>
+                    <button class="btn">Оставить свой отзыв</button>
                 </div>
             </div>
         </div>
@@ -250,10 +251,10 @@
                 </div>
                 <div class="col-sm-12 order-sm-2 col-md-5">
                     <ul class="menu">
-                        <li><a id="footer-specification-scroll">Преимущества</a></li>
-                        <li><a id="footer-how-to-scroll">Как это работает?</a></li>
-                        <li><a id="footer-popup-call">Сотрудничество</a></li>
-                        <li><a id="footer-sale-scroll">Оформить заказ</a></li>
+                        <li><a data-scroll-to="#specification">Преимущества</a></li>
+                        <li><a data-scroll-to="#how-to">Как это работает?</a></li>
+                        <li><a class="popup-call">Сотрудничество</a></li>
+                        <li><a data-scroll-to="#sale">Оформить заказ</a></li>
                     </ul>
                 </div>
                 <div class="order-3 offset-sm-2 order-sm-1 col-sm-5 offset-md-0 col-md-4 order-md-2">
@@ -269,8 +270,6 @@
         </div>
     </footer>
     <script src="js/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="libs/scrollTo/jquery.scrollTo.min.js"></script>
     <script src="libs/owl.carousel/owl.carousel.min.js"></script>
     <script src="libs/cookies.min.js"></script>
     <script src="js/common.js"></script>
